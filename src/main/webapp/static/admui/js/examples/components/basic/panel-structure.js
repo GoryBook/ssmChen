@@ -1,0 +1,10 @@
+(function (_0x17d12e, _0x3029af, _0xfef121) {
+
+    _0x3029af['customRefreshCallback'] = function (_0x21beb3) {
+        var _0x3d155e = _0xfef121(this);
+        setTimeout(function () {
+            _0x21beb3();
+            _0x3d155e.find('.panel-body').html('近日沃尔沃宣布将联合瑞典汽车安全公司奥托立夫(AUTOLIV)成立一个独立子公司，该公司将专攻瞄准未来车型自动驾驶技\x20术相关的研发。奥托立夫公司(AUTOLIV)是在瑞典设立的一家国际跨国公司，公司多年来研发汽车电子安全系统、电子控制单元，汽车方向盘系统以及夜视\x20和雷达传感系统，新的合作能够让新公司吸取Autoliv多年来在汽车驾驶安全配件制造方面的经验，研发未来用于沃尔沃或其它厂商的无人驾驶软件系统。');
+        }, 0x3e8);
+    };
+}(document, window, jQuery));

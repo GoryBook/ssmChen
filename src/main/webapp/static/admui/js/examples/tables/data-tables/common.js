@@ -1,0 +1,18 @@
+var _0x60cb = ['run'];
+(function (_0x5cecfb, _0x5459ee) {
+    var _0x25febf = function (_0x5d3908) {
+        while (--_0x5d3908) {
+            _0x5cecfb['push'](_0x5cecfb['shift']());
+        }
+    };
+    _0x25febf(++_0x5459ee);
+}(_0x60cb, 0x10d));
+var _0xb60c = function (_0x30f739, _0x31c970) {
+    _0x30f739 = _0x30f739 - 0x0;
+    var _0x90ad7f = _0x60cb[_0x30f739];
+    return _0x90ad7f;
+};
+(function () {
+
+    App.run();
+}());

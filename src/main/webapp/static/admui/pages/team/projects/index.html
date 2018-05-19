@@ -1,0 +1,475 @@
+﻿
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>项目列表 01</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="admui.com">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止搜索引擎抓取 -->
+    <meta name="robots" content="nofollow">
+    <!-- 禁止百度SiteAPP转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../../images/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="../../../images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../../images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/images/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='/ie.html'" />
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="../../../vendor/media-match/media.match.min.js"></script>
+    <script src="../../../vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- 样式 -->
+    <link rel="stylesheet" href="../../../themes/classic/global/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../../themes/classic/base/css/site.css" id="admui-siteStyle">
+
+
+    <!-- 图标 CSS-->
+    <link rel="stylesheet" href="../../../fonts/web-icons/web-icons.css">
+
+    <link rel="stylesheet" href="../../../css/examples/pages/team/projects.css">
+
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../vendor/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page animation-fade page-projects">
+        <div class="page-header">
+            <h1 class="page-title">项目列表 01</h1>
+            <div class="page-header-actions">
+                <form>
+                    <div class="input-search">
+                        <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                        <input type="text" class="form-control" name="" placeholder="搜索...">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="projects-sort">
+                <span class="projects-sort-label">排序： </span>
+                <div class="inline-block dropdown">
+                    <span class="dropdown-toggle" id="projects-menu" data-toggle="dropdown" aria-expanded="false" role="button">
+                        默认
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </span>
+                    <ul class="dropdown-menu animation-scale-up animation-top-left animation-duration-250" aria-labelledby="projects-menu" role="menu">
+                        <li role="presentation">
+                            <a href="javascript:;" role="menuitem" tabindex="-1">按进度</a>
+                        </li>
+                        <li class="active" role="presentation">
+                            <a href="javascript:;" role="menuitem" tabindex="-1">按开始日期</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:;" role="menuitem" tabindex="-1">按结束日期</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects-wrap">
+                <ul class="blocks blocks-100 blocks-xlg-5 blocks-md-4 blocks-sm-3 blocks-xs-2" data-plugin="animateList" data-child=">li">
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 01</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 02</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 03</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 04</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 05</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 06</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 07</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 08</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 09</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <figure class="overlay overlay-hover animation-hover">
+                                <img class="caption-figure" src="../../../images/placeholder.png">
+                                <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                                    <div class="btn-group">
+                                        <div class="dropdown pull-left">
+                                            <button type="button" class="btn btn-icon btn-pure btn-default dropdown-toggle" title="设置">
+                                                <i class="icon wb-settings" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="">复制</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">重命名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-icon btn-pure btn-default" title="Delete" data-tag="project-delete">
+                                            <i class="icon wb-trash" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-default project-button">
+                                        查看项目
+                                    </button>
+                                </figcaption>
+                            </figure>
+                            <div class="time pull-right">2016.9.2</div>
+                            <div class="text-truncate">项目 10</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="pagination pagination-no-border">
+                    <li class="disabled">
+                        <a href="javascript:;" aria-label="上一页"><span aria-hidden="true">&laquo;</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">1 <span class="sr-only">(当前)</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">3</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">4</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">5</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" aria-label="下一页"><span aria-hidden="true">&raquo;</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <button class="site-action btn-raised btn btn-success btn-floating" data-target="#addProjectForm" data-toggle="modal" data-page-height="460" data-page="/pages/team/projects/_add-project" type="button">
+            <i class="icon wb-plus" aria-hidden="true"></i>
+        </button>
+
+    </div>
+
+    <div class="modal fade" id="addProjectForm" aria-hidden="true" aria-labelledby="addProjectForm" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="../../../themes/classic/base/js/app.js"></script>
+    <script src="../../../js/examples/pages/team/projects/index.js"></script>
+</body>
+
+</html>

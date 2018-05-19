@@ -1,0 +1,181 @@
+﻿
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>日志信息</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="admui.com">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止搜索引擎抓取 -->
+    <meta name="robots" content="nofollow">
+    <!-- 禁止百度SiteAPP转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="../images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/images/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='/ie.html'" />
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script sec="../vendor/media-match/media.match.min.js"></script>
+    <script sec="../vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- 样式 -->
+    <link rel="stylesheet" href="../themes/classic/global/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../themes/classic/base/css/site.css" id="admui-siteStyle">
+
+
+    <link rel="stylesheet" href="../fonts/web-icons/web-icons.css">
+    <link rel="stylesheet" href="../fonts/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../vendor/select2/select2.css">
+    <link rel="stylesheet" href="../vendor/datatables-bootstrap/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../vendor/datatables-responsive/dataTables.responsive.css">
+
+    <script sec="../vendor/jquery/jquery.min.js"></script>
+    <script sec="../vendor/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page animation-fade page-logs">
+        <div class="page-header">
+            <h1 class="page-title">系统日志</h1>
+            <div class="page-header-actions">
+                <button type="button" class="btn btn-icon btn-info collapsed" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                    <i class="icon fa-filter"></i>
+                </button>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="collapse" id="collapseFilter" aria-expanded="true">
+                <div class="panel">
+                    <div class="panel-body">
+                        <form class="form-inline" id="logForm">
+                            <div class="form-group">
+                                <div class="input-daterange input-group">
+                                    <span class="input-group-addon"><i class="icon wb-calendar" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" id="filter-date" placeholder="起至日期">
+                                    <input type="hidden" name="startDate">
+                                    <input type="hidden" name="endDate">
+                                    <a class="input-group-addon padding-horizontal-10" role="button">
+                                        <i class="icon wb-close date-close"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name="url" data-plugin="select2">
+                                    <option value="">日志名称</option>
+
+                                    <option value="/system/menu">访问菜单管理</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name="user.userId" data-plugin="select2">
+                                    <option value="">所有用户</option>
+
+                                    <option value="9">xiaxuan@admui_demo</option>
+
+                                    <option value="10">zhangzhiyuan@admui_demo</option>
+
+                                    <option value="11">wangshiqi@admui_demo</option>
+
+                                    <option value="12">lixin@admui_demo</option>
+
+                                    <option value="13">qinshouren@admui_demo</option>
+
+                                    <option value="14">liuyiming@admui_demo</option>
+
+                                    <option value="15">wangjiaqi@admui_demo</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success"><i class="icon fa-search"></i> 查找</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <header class="panel-heading">
+                    <h3 class="panel-title">日志信息</h3>
+                </header>
+                <div class="panel-body">
+                    <table class="table table-bordered table-hover text-nowrap dataTable table-striped width-full margin-vertical-10" id="logList" data-column-defs='[{ "orderable": false, "targets": 2}]'>
+                        <thead>
+                            <tr>
+                                <th>路径</th>
+                                <th>名称</th>
+                                <th>参数</th>
+                                <th>用户</th>
+                                <th>用户IP</th>
+                                <th>时间</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>路径</th>
+                                <th>名称</th>
+                                <th>参数</th>
+                                <th>用户</th>
+                                <th>用户IP</th>
+                                <th>时间</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script sec="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script sec="../vendor/datatables-bootstrap/dataTables.bootstrap.min.js"></script>
+    <script sec="../vendor/datatables-responsive/dataTables.responsive.min.js"></script>
+    <script sec="../vendor/bootstrap-daterangepicker/moment.min.js"></script>
+    <script sec="../vendor/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+    <script sec="../vendor/select2/select2.min.js"></script>
+    <script sec="../vendor/select2/i18n/zh-CN.min.js"></script>
+    <script sec="../themes/classic/base/js/app.js"></script>
+    <script sec="../js/system/log.js"></script>
+</body>
+
+</html>

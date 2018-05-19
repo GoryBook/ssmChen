@@ -1,0 +1,206 @@
+﻿
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>日历</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="admui.com">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止搜索引擎抓取 -->
+    <meta name="robots" content="nofollow">
+    <!-- 禁止百度SiteAPP转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../../images/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="../../../images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../../images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/images/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='/ie.html'" />
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="../../../vendor/media-match/media.match.min.js"></script>
+    <script src="../../../vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- 样式 -->
+    <link rel="stylesheet" href="../../../themes/classic/global/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../../themes/classic/base/css/site.css" id="admui-siteStyle">
+
+
+    <!-- 图标 CSS-->
+    <link rel="stylesheet" href="../../../fonts/web-icons/web-icons.css">
+
+    <link rel="stylesheet" href="../../../vendor/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="../../../css/examples/pages/team/calendar.css">
+
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../vendor/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body class="layout-full">
+
+    <div class="page animation-fade page-calendar">
+        <div class="page-aside">
+            <div class="page-aside-switch">
+                <i class="icon wb-chevron-left" aria-hidden="true"></i>
+                <i class="icon wb-chevron-right" aria-hidden="true"></i>
+            </div>
+            <div class="page-aside-inner height-full" data-plugin="slimScroll">
+                <section class="page-aside-section">
+                    <h5 class="page-aside-title">
+                        列表
+                    </h5>
+                    <div class="list-group has-actions">
+                        <div class="list-group-item">
+                            <div class="list-content">
+                                <span class="item-right">10</span>
+
+                                <span class="list-text">管理员</span>
+                                <div class="item-actions">
+                                    <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                                    <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="list-editable">
+                                <div class="form-group form-material">
+                                    <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Admin Calendar">
+                                    <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="list-content">
+                                <span class="item-right">5</span>
+
+                                <span class="list-text">主页</span>
+                                <div class="item-actions">
+                                    <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                                    <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="list-editable">
+                                <div class="form-group form-material">
+                                    <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Home Calendar">
+                                    <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="list-content">
+                                <span class="item-right">16</span>
+
+                                <span class="list-text">工作</span>
+                                <div class="item-actions">
+                                    <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                                    <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="list-editable">
+                                <div class="form-group form-material">
+                                    <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Work Calendar">
+                                    <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page-aside-section">
+                    <h5 class="page-aside-title">
+                        事件
+                    </h5>
+                    <div class="list-group calendar-list">
+                        <a class="list-group-item calendar-event" data-title="Meeting" data-stick=true data-color="red-600" href="javascript:;">
+                            <i class="wb-medium-point red-600 margin-right-10" aria-hidden="true"></i>开会
+                        </a>
+                        <a class="list-group-item calendar-event" data-title="Birthday Party" data-stick=true data-color="green-600" href="javascript:;">
+                            <i class="wb-medium-point green-600 margin-right-10" aria-hidden="true"></i>生日
+                        </a>
+                        <a class="list-group-item calendar-event" data-title="Call Jimba" data-stick=true data-color="orange-600" href="javascript:;">
+                            <i class="wb-medium-point orange-600 margin-right-10" aria-hidden="true"></i>联系客户
+                        </a>
+                        <a class="list-group-item calendar-event" data-title="Dinner with Team" data-stick=true data-color="cyan-600" href="javascript:;">
+                            <i class="wb-medium-point cyan-600 margin-right-10" aria-hidden="true"></i>团队活动
+                        </a>
+                        <a id="addNewEventBtn" class="list-group-item" href="javascript:;">
+                            <i class="icon wb-plus" aria-hidden="true"></i> 添加新事件
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="page-main">
+            <div class="calendar-container">
+                <div id="calendar"></div>
+            </div>
+        </div>
+
+        <div class="site-action">
+            <button type="button" class="site-action site-floataction btn-raised btn btn-success btn-floating">
+                <i class="front-icon wb-plus animation-scale-up" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addNewEvent" aria-hidden="true" aria-labelledby="addNewEvent" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editNewEvent" aria-hidden="true" aria-labelledby="editNewEvent" role="dialog" tabindex="-1" data-show="false">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addNewCalendar" aria-hidden="true" aria-labelledby="addNewCalendar" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="../../../vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../../vendor/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../../vendor/moment/moment.min.js"></script>
+    <script src="../../../vendor/fullcalendar/fullcalendar.min.js"></script>
+    <script src="../../../vendor/fullcalendar/lang/zh-cn.min.js"></script>
+    <script src="../../../themes/classic/global/js/plugins/action-btn.js"></script>
+    <script src="../../../themes/classic/base/js/app.js"></script>
+    <script src="../../../js/examples/pages/team/calendar/index.js"></script>
+</body>
+
+</html>
