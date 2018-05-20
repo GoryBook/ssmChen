@@ -1,9 +1,9 @@
-package com.chatRobot.controller;
+package com.chatRobot.sys.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.chatRobot.model.User;
-import com.chatRobot.service.IUserService;
+import com.chatRobot.sys.model.User;
+import com.chatRobot.sys.service.IUserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

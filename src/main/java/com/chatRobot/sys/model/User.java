@@ -1,4 +1,4 @@
-package com.chatRobot.model;
+package com.chatRobot.sys.model;
 
 import java.util.Date;
 

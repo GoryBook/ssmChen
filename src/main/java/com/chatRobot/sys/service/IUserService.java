@@ -1,6 +1,6 @@
-package com.chatRobot.service;
+package com.chatRobot.sys.service;
 
-import com.chatRobot.model.User;
+import com.chatRobot.sys.model.User;
 
 public interface IUserService {
 
