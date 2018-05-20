@@ -136,6 +136,17 @@
 
 
 
+       <!-- 有可能在你使用druid数据库连接池之前你已经在使用别的数据库链接池，如果迁移的话方便吗，回答是很方便，因为他的配置和dbcp是基本一致的，你只需要修改corg.apache.commons.dbcp.BasicDataSource  为om.alibaba.druid.pool.DruidDataSource 就可以-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.9</version>
+        </dependency>
+
+
+
+
     </dependencies>
 
     <build>
@@ -177,12 +188,20 @@
                     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 
                 </dependencies>
-
             </plugin>
         </plugins>
+        <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>*.properties</include>
+                    <include>/mapper/**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
     </build>
-
-
 
 
 

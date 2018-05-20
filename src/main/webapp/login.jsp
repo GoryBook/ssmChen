@@ -46,7 +46,7 @@
                 var data={};
                 data.userName=userName;
                 data.password=password;
-                url="<%=path%>/sys/login";
+                url="<%=path%>/sys/login.do";
                 $.ajax({
                     url:url,
                     dataType:"json",

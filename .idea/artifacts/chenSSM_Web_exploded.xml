@@ -1,7 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="chenSSM:war exploded">
-    <output-path>$PROJECT_DIR$/target/ChatRobot</output-path>
+  <artifact type="exploded-war" name="chenSSM:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/chenSSM_Web_exploded</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="chenSSM/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="chenSSM" />
@@ -32,12 +33,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.47" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.9" />
         </element>
       </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/ChatRobot/META-INF/MANIFEST.MF" />
-      </element>
-      <element id="javaee-facet-resources" facet="chenSSM/web/Web" />
     </root>
   </artifact>
 </component>
