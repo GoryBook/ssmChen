@@ -34,6 +34,7 @@ public class SysController {
         Map<String,Object> userMap=sysService.login(userName);
         if (userMap==null){
             object.put("success",false);
+
             object.put("reason","用户不存在");
         }else{
             if(userMap.get("valid").toString().equals("0")){
