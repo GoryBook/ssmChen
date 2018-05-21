@@ -1,3 +1,4 @@
+/*
 package com.chatRobot.sys.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.chatRobot.sys.service.SysService;
@@ -13,9 +14,11 @@ import java.util.List;
 import java.util.Map;
 
 
+*/
 /**
  * Created by ccj on 2017/2/21.
- */
+ *//*
+
 @Controller
 @RequestMapping("/sys")
 public class SysController {
@@ -44,7 +47,9 @@ public class SysController {
                 if (userMap.get("password").toString().equals(password)){
                     session.setAttribute("userName",userMap.get("userName"));
                     session.setAttribute("password",password);
-                /*获取当前用户的权限并存到session*/
+                */
+/*获取当前用户的权限并存到session*//*
+
                     int userId=Integer.parseInt(userMap.get("id").toString());
                     List<Map<String,Object>> auths=sysService.getAuthByUserId(userId);
                     session.setAttribute("auths",auths);
@@ -75,7 +80,8 @@ public class SysController {
     public String ui() {
         return "sys/main1";
     }
-   /* @RequestMapping(value = "/regr", produces = "text/html;charset=UTF-8")
+   */
+/* @RequestMapping(value = "/regr", produces = "text/html;charset=UTF-8")
     @ResponseBody
     public String registerDemo(@RequestParam("userName") String name,
                                @RequestParam("email") String email,
@@ -106,6 +112,8 @@ public class SysController {
         }
 
         return object.toJSONString();
-    }*/
+    }*//*
+
 
 }
+*/

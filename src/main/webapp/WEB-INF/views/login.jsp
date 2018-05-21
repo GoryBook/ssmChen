@@ -15,13 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
     <!--webfonts-->
     <!--//webfonts-->
 
-    <script type="text/javascript" src="static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery-1.11.0.min.js"></script>
 
-    <script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 
 
     <script type="text/javascript">
@@ -99,7 +99,7 @@
     </div>
     <div class="clear"> </div>
     <div class="avtar">
-        <img src="static/img/images/avtar.png" />
+        <img src="../../static/img/images/avtar.png" />
     </div>
     <form>
         <input id="userName" type="text" class="text" value="用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '用户名';}" >
