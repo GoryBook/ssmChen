@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="chenSSM:Web exploded">
-    <output-path>$PROJECT_DIR$/../chenSSM/out/artifacts/chenSSM_Web_exploded</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/chenSSM_Web_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="chenSSM/web/Web" />
       <element id="directory" name="WEB-INF">
